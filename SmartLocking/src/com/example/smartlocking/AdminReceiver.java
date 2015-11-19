@@ -11,6 +11,7 @@ import android.util.Log;
 public class AdminReceiver extends DeviceAdminReceiver{
     static final String TAG = "DeviceAdminReceiver";
     public static int k = 0;
+    //hi
 
     @Override
        public void onEnabled(Context context, Intent intent) {
