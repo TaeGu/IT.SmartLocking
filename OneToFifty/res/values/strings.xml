@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">1to50게임</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_one_to_fifty">1to50게임</string>
+
+</resources>
