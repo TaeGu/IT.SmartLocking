@@ -11,18 +11,18 @@ import android.util.Log;
 public class AdminReceiver extends DeviceAdminReceiver{
     static final String TAG = "DeviceAdminReceiver";
     public static int k = 0;
-    //hi
+    //hikkk
 
     @Override
        public void onEnabled(Context context, Intent intent) {
            super.onEnabled(context, intent);
-           Log.i("AdminReceiver", "¼­ºñ½º ½ÃÀÛ");
+           Log.i("AdminReceiver", "Â¼Â­ÂºÃ±Â½Âº Â½ÃƒÃ€Ã›");
        }
 
        @Override
        public void onDisabled(Context context, Intent intent) {
            super.onDisabled(context, intent);
-           Log.i("AdminReceiver", "¼­ºñ½º Á¾·á");
+           Log.i("AdminReceiver", "Â¼Â­ÂºÃ±Â½Âº ÃÂ¾Â·Ã¡");
 
        }
 
