@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.BatteryManager;
+<<<<<<< HEAD
 import android.support.v4.content.IntentCompat;
 import android.util.Log;
 
@@ -15,6 +16,18 @@ public class BatteryReceiver extends BroadcastReceiver{
 		
 		String action = intent.getAction();
 
+=======
+import android.util.Log;
+
+public class BatteryReceiver extends BroadcastReceiver{
+	boolean bcheck = true;
+	@Override
+	public void onReceive(Context context, Intent intent) {
+		// TODO Auto-generated method stub
+		
+		String action = intent.getAction();
+		
+>>>>>>> branch 'master' of https://github.com/TaeGu/IT.SmartLocking.git
 		
 		if(action.equals(Intent.ACTION_BATTERY_CHANGED)){
 			int remain = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 0);

@@ -22,7 +22,11 @@ public class MailSend {
         {
         	body = "GPS 기능이 꺼져있습니다.";
         }else{
+<<<<<<< HEAD
         	body = "http://m.map.daum.net/look?p=" + a + "," + b;
+=======
+        	body = "위치 정보 : http://m.map.daum.net/look?p=" + a + "," + b;
+>>>>>>> branch 'master' of https://github.com/TaeGu/IT.SmartLocking.git
         }
         
         try
