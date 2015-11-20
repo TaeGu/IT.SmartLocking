@@ -1,2 +1,0 @@
-# IT.SmartLocking
-hello
