@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+    	
+        <TextView
+        android:id="@+id/text0"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App 동작하기란?"
+        android:textSize="28dp" />
+        
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="horizontal">
+        
+        <TextView
+        	android:id="@+id/text1"
+        	android:layout_margin="10dp"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="이 기능을 사용한다면 먼저 스마트폰 잠금 화면을 설정하여야 하고 정확한 위치를 알기 위해 GPS를 켜야 한다."
+        	android:textSize="20dp" />
+        
+        <TextView
+            android:id="@+id/text2"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:text="그리고 지정한 횟수 만큼 잠금 해제 실패할 시 그 시점을 기준으로 사진(셀프카메라), 위치를 메일로 보내는 기능이 동작한다."
+            android:textSize="20dp" />
+        
+        <TextView
+            android:id="@+id/text3"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:text="이 기능은 On/Off로 동작한다."
+            android:textSize="20dp" />
+        
+    </RelativeLayout>
+    
+    
+</LinearLayout>
