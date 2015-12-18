@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartlocking"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCOUNTS_MANAGER" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/smartlocking"
+        android:label="SmartLocking"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="SmartLocking" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:name=".Cam_GPS_Activity" android:theme="@android:style/Theme.Translucent"/>
+        
+        <activity android:name=".LockScreenActivity" android:excludeFromRecents="true" android:noHistory="true"/>
+        
+        <activity android:name=".GpsActivity" android:excludeFromRecents="false" android:noHistory="false"/>
+        
+        <activity android:name="com.example.smartlocking.Advice_Lock"  android:label="SmartLocking"/>
+        <activity android:name="com.example.smartlocking.Advice_Flare" android:label="SmartLocking"/>
+        <activity android:name="com.example.smartlocking.Advice_USIM"  android:label="SmartLocking"/>
+        
+        <service android:name=".ScreenService" />
+        <service android:name=".BatteryService" />
+        <service android:name=".UsimService" />
+        
+        <receiver
+	    	android:name="AdminReceiver"
+	    	android:permission="android.permission.BIND_DEVICE_ADMIN">
+	    	<meta-data
+	        	android:name="android.app.device_admin"
+	        	android:resource="@xml/device_policy" />
+	    	<intent-filter>
+	        	<action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+	    	</intent-filter>
+		</receiver> 
+		<receiver android:name=".UsimReceiver" />   
+		<receiver android:name=".BatteryReceiver" /> 
+    </application>
+
+</manifest>
